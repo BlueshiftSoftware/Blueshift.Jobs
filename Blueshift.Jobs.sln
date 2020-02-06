@@ -1,0 +1,80 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DD771F27-502B-4C32-BF31-AB8A95EF7F02}"
+	ProjectSection(SolutionItems) = preProject
+		src\Directory.Build.props = src\Directory.Build.props
+		src\Directory.Build.targets = src\Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blueshift.Jobs", "src\Blueshift.Jobs\Blueshift.Jobs.csproj", "{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{40E99949-B0B1-4E49-9DC4-90D997EEE382}"
+	ProjectSection(SolutionItems) = preProject
+		test\Directory.Build.props = test\Directory.Build.props
+		test\Directory.Build.targets = test\Directory.Build.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Blueshift.Jobs.Tests", "test\Blueshift.Jobs.Tests\Blueshift.Jobs.Tests.csproj", "{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_global", "_global", "{DCAC82D5-7055-404E-BAC3-377E58ACBB9C}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		build.ps1 = build.ps1
+		Directory.Build.props = Directory.Build.props
+		Directory.Build.targets = Directory.Build.targets
+		LICENSE = LICENSE
+		Packages.props = Packages.props
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|x64.Build.0 = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Debug|x86.Build.0 = Debug|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|x64.ActiveCfg = Release|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|x64.Build.0 = Release|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|x86.ActiveCfg = Release|Any CPU
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E}.Release|x86.Build.0 = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|x64.Build.0 = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Debug|x86.Build.0 = Debug|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x64.ActiveCfg = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x64.Build.0 = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x86.ActiveCfg = Release|Any CPU
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E} = {DD771F27-502B-4C32-BF31-AB8A95EF7F02}
+		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8} = {40E99949-B0B1-4E49-9DC4-90D997EEE382}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {85C5421E-9969-4B67-9965-D630F4B59CF3}
+	EndGlobalSection
+EndGlobal

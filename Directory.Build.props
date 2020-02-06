@@ -1,0 +1,14 @@
+﻿<Project>
+
+  <Import Project="../Directory.Build.props" Condition="Exists('../Directory.Build.props')" />
+  
+  <PropertyGroup>
+    <LibraryFramework>netstandard2.1</LibraryFramework>
+    <RuntimeFramework>netcoreapp3.1</RuntimeFramework>
+
+    <LangVersion>7.2</LangVersion>
+
+    <PackageTags>$(PackageTags) Common</PackageTags>
+  </PropertyGroup>
+
+</Project>
