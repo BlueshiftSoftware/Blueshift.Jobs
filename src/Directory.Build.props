@@ -2,4 +2,8 @@
 
   <Import Project="../Directory.Build.props"/>
 
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" />
+  </ItemGroup>
+
 </Project>

@@ -1,11 +1,20 @@
 ﻿<Project>
 
+  <ItemGroup Label="Microsoft Packages">
+    <PackageReference Update="Microsoft.Extensions.DependencyInjection.Abstractions"  Version="[3.1.1]" />
+    <PackageReference Update="Microsoft.Extensions.Logging.Abstractions"              Version="[3.1.1]" />
+  </ItemGroup>
+
+  <ItemGroup Label="Code Analysis">
+    <PackageReference Update="Microsoft.CodeAnalysis.FxCopAnalyzers"                  Version="[2.9.8]" PrivateAssets="All" />
+  </ItemGroup>
+
   <ItemGroup Label="Test Packages">
-    <PackageReference Update="coverlet.collector"                                     Version="1.2.0" />
-    <PackageReference Update="Microsoft.NET.Test.Sdk"                                 Version="16.3.0" />
-    <PackageReference Update="Moq"                                                    Version="4.12.0" />
-    <PackageReference Update="xunit"                                                  Version="2.4.1" />
-    <PackageReference Update="xunit.runner.visualstudio"                              Version="2.4.1" />
+    <PackageReference Update="coverlet.collector"                                     Version="[1.2.0]" />
+    <PackageReference Update="Microsoft.NET.Test.Sdk"                                 Version="[16.3.0]" />
+    <PackageReference Update="Moq"                                                    Version="[4.13.0]" />
+    <PackageReference Update="xunit"                                                  Version="[2.4.1]" />
+    <PackageReference Update="xunit.runner.visualstudio"                              Version="[2.4.1]" />
   </ItemGroup>
 
 </Project>
