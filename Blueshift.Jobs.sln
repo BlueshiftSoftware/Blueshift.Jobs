@@ -32,6 +32,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_global", "_global", "{DCAC
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blueshift.Jobs.Repositories.MemoryCache", "src\Blueshift.Jobs.Repositories.MemoryCache\Blueshift.Jobs.Repositories.MemoryCache.csproj", "{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Blueshift.Jobs.Repositories.MemoryCache.Tests", "test\Blueshift.Jobs.Repositories.MemoryCache.Tests\Blueshift.Jobs.Repositories.MemoryCache.Tests.csproj", "{4D0E3649-7191-4002-9975-947564F67C0A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -66,6 +70,30 @@ Global
 		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x64.Build.0 = Release|Any CPU
 		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x86.ActiveCfg = Release|Any CPU
 		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8}.Release|x86.Build.0 = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|x64.Build.0 = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Debug|x86.Build.0 = Debug|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|x64.ActiveCfg = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|x64.Build.0 = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|x86.ActiveCfg = Release|Any CPU
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4}.Release|x86.Build.0 = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|x64.Build.0 = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Debug|x86.Build.0 = Debug|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|x64.ActiveCfg = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|x64.Build.0 = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|x86.ActiveCfg = Release|Any CPU
+		{4D0E3649-7191-4002-9975-947564F67C0A}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -73,6 +101,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{15B8851C-31FB-4B96-9411-B6D88CA7DA5E} = {DD771F27-502B-4C32-BF31-AB8A95EF7F02}
 		{B42CD4D6-AB78-4205-A7EE-D9990CB2C9A8} = {40E99949-B0B1-4E49-9DC4-90D997EEE382}
+		{2BA047AD-9670-4579-9EB4-E6A2EE18ACA4} = {DD771F27-502B-4C32-BF31-AB8A95EF7F02}
+		{4D0E3649-7191-4002-9975-947564F67C0A} = {40E99949-B0B1-4E49-9DC4-90D997EEE382}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85C5421E-9969-4B67-9965-D630F4B59CF3}

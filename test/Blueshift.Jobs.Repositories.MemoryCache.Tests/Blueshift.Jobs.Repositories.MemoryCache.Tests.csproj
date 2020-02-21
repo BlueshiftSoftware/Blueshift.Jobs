@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>$(RuntimeFramework)</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Blueshift.Jobs.Repositories.MemoryCache\Blueshift.Jobs.Repositories.MemoryCache.csproj" />
+  </ItemGroup>
+
+</Project>

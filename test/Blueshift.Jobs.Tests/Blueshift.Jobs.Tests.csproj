@@ -2,8 +2,6 @@
 
   <PropertyGroup>
     <TargetFramework>$(RuntimeFramework)</TargetFramework>
-
-    <IsPackable>false</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>

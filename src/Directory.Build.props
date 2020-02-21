@@ -2,7 +2,7 @@
 
   <Import Project="../Directory.Build.props"/>
 
-  <ItemGroup>
+  <ItemGroup Label="Shared Code Analyzers">
     <PackageReference Include="Microsoft.CodeAnalysis.FxCopAnalyzers" />
   </ItemGroup>
 
