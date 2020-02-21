@@ -33,7 +33,7 @@ namespace Blueshift.Jobs.Tests.Services
                 .Setup(jobRepository => jobRepository.GetJobsAsync(It.IsAny<JobSearchCriteria>()))
                 .ReturnsAsync((JobSearchCriteria jobSearchCriteria) =>
                     _testJobBatchServiceFactory.AvailableJobs
-                        .Take(jobSearchCriteria.MaximumJobCount)
+                        .Take(jobSearchCriteria.MaximumItems.Value)
                         .ToList()
                         .AsReadOnly()
                 )
@@ -50,7 +50,7 @@ namespace Blueshift.Jobs.Tests.Services
             {
                 BatchingJobFilter =
                 {
-                    MaximumJobCount = requestedJobCount
+                    MaximumItems = requestedJobCount
                 }
             };
 
@@ -65,7 +65,7 @@ namespace Blueshift.Jobs.Tests.Services
             _testJobBatchServiceFactory.MockJobRepository
                 .Verify(
                     jobRepository => jobRepository.GetJobsAsync(
-                        It.Is<JobSearchCriteria>(jobSearchCriteria => jobSearchCriteria.MaximumJobCount == requestedJobCount)),
+                        It.Is<JobSearchCriteria>(jobSearchCriteria => jobSearchCriteria.MaximumItems == requestedJobCount)),
                     Times.Once);
 
             _testJobBatchServiceFactory.MockJobBatchRepository

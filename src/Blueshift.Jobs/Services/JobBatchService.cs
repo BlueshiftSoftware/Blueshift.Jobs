@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Threading.Tasks;
 using Blueshift.Jobs.Abstractions.Services;
 using Blueshift.Jobs.DomainModel;
@@ -38,7 +37,7 @@ namespace Blueshift.Jobs.Services
                 BlueshiftJobsResources.CreatingJobBatch,
                 createJobBatchRequest.JobBatchRequestor,
                 createJobBatchRequest.JobBatchDescription,
-                createJobBatchRequest.BatchingJobFilter.MaximumJobCount);
+                createJobBatchRequest.BatchingJobFilter.MaximumItems);
 
             try
             {
@@ -46,11 +45,12 @@ namespace Blueshift.Jobs.Services
                     .GetJobsAsync(createJobBatchRequest.BatchingJobFilter)
                     .ConfigureAwait(false);
 
-                var jobBatch = new JobBatch(jobs)
-                {
-                    JobBatchOwner = createJobBatchRequest.JobBatchRequestor,
-                    JobBatchDescription = createJobBatchRequest.JobBatchDescription
-                };
+                var jobBatch = new JobBatch
+                    {
+                        JobBatchOwnerId = createJobBatchRequest.JobBatchRequestor,
+                        JobBatchDescription = createJobBatchRequest.JobBatchDescription
+                    }
+                    .WithJobs(jobs);
 
                 jobBatch = await _jobBatchRepository
                     .CreateJobBatchAsync(jobBatch)
@@ -58,7 +58,7 @@ namespace Blueshift.Jobs.Services
 
                 _jobBatchServiceLogger.LogInformation(
                     BlueshiftJobsResources.CreatedJobBatch,
-                    jobBatch.JobBatchOwner,
+                    jobBatch.JobBatchOwnerId,
                     jobBatch.JobBatchDescription,
                     jobBatch.Jobs.Count);
 

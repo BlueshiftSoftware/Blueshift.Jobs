@@ -13,6 +13,10 @@ namespace Blueshift.Jobs.DomainModel
 
         public JobStatus JobStatus { get; set; }
 
+        public DateTimeOffset CreatedAt { get; set; }
+
+        public DateTimeOffset? ExecuteAfter { get; set; }
+
         public ISet<JobStatusChangeEvent> JobStatusChangeEvents { get; } = new HashSet<JobStatusChangeEvent>();
 
         public IDictionary<string, string> JobParameters { get; } = new Dictionary<string, string>();

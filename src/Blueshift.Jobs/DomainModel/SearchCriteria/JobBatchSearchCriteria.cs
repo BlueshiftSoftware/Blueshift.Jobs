@@ -1,11 +1,7 @@
 ﻿namespace Blueshift.Jobs.DomainModel.SearchCriteria
 {
-    public class JobBatchSearchCriteria
+    public class JobBatchSearchCriteria : SearchCriteriaBase
     {
-        public string OwnerName { get; set; }
-
-        public int MaximumJobBatchCount { get; set; }
-
-        public int JobBatchesToSkip { get; set; }
+        public string JobBatchOwnerId { get; set; }
     }
 }
